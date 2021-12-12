@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System Web Based</title>
+    <link rel="stylesheet" href="assets/index.css" />
+</head>
+
+<body id="body">
+    <main>
+        <div>
+            <div class="cardContainer">
+                <div class="cardHeader">
+                    <span class="cardHeaderText">SIMPLE GRADING SYSTEM</span>
+                </div>
+                <div class="cardBody">
+                    <button id="btn1" onclick="btn1()">Subject 1</button>
+                    <button id="btn2" onclick="btn2()">Subject 2</button>
+                    <button id="btn3" onclick="btn3()">Subject 3</button>
+                    <button id="btn4" onclick="btn4()">Subject 4</button>
+                    <button id="btn5" onclick="btn5()">Subject 5</button>
+                    <button id="btn6" onclick="btn6()">Subject 6</button>
+                    <button id="btn7" onclick="btn7()">Subject 7</button>
+                    <button id="btn8" onclick="btn8()">Subject 8</button>
+                    <button id="btn9" onclick="btn9()">subject 9</button>
+                    <button id="total" class="total" onclick="btntotal()">
+                        TOTAL GRADE
+                    </button>
+                </div>
+            </div>
+            <section class="modal-btn1-container" hidden>
+                <span class="modalHeader">ENTER DETAILS SUBJECT 1</span>
+                <hr />
+                <div class="modalBody">
+                    <input class="modalInput" id="subject_1" type="text" placeholder="Enter Subject" />
+                    <input class="modalInput" id="1stGrade_1" type="text" placeholder="Enter 1st Grade" />
+                    <input class="modalInput" id="2ndGrade_1" type="text" placeholder="Enter 2nd Grade" />
+                    <input class="modalInput" id="3thGrade_1" type="text" placeholder="Enter 3rd Grade" />
+                    <input class="modalInput" id="4thGrade_1" type="text" placeholder="Enter 4th Grade" />
+                    <hr style="margin-top: 10px;" />
+                    <div class="modalButton">
+                        <button class="totalButton" onclick="modal_1_Submit()">SUBMIT</button>
+                        <button class="closeButton" onclick="closeModal1()">CLOSE</button>
+                    </div>
+                </div>
+            </section>
+            <section class="modal-btn2-container" hidden>
+                <span class="modalHeader">ENTER DETAILS SUBJECT 2</span>
+                <hr />
+                <div class="modalBody">
+                    <input class="modalInput" id="subject_2" type="text" placeholder="Enter Subject" />
+                    <input class="modalInput" id="1stGrade_2" type="text" placeholder="Enter 1st Grade" />
+                    <input class="modalInput" id="2ndGrade_2" type="text" placeholder="Enter 2nd Grade" />
+                    <input class="modalInput" id="3thGrade_2" type="text" placeholder="Enter 3rd Grade" />
+                    <input class="modalInput" id="4thGrade_2" type="text" placeholder="Enter 4th Grade" />
+                    <hr style="margin-top: 10px;" />
+                    <div class="modalButton">
+                        <button class="totalButton" onclick="modal_2_Submit()">SUBMIT</button>
+                        <button class="closeButton" onclick="closeModal2()">CLOSE</button>
+                    </div>
+                </div>
+            </section>
+            <section class="modal-btn3-container" hidden>
+                <span class="modalHeader">ENTER DETAILS SUBJECT 3</span>
+                <hr />
+                <div class="modalBody">
+                    <input class="modalInput" id="subject_3" type="text" placeholder="Enter Subject" />
+                    <input class="modalInput" id="1stGrade_3" type="text" placeholder="Enter 1st Grade" />
+                    <input class="modalInput" id="2ndGrade_3" type="text" placeholder="Enter 2nd Grade" />
+                    <input class="modalInput" id="3thGrade_3" type="text" placeholder="Enter 3rd Grade" />
+                    <input class="modalInput" id="4thGrade_3" type="text" placeholder="Enter 4th Grade" />
+                    <hr style="margin-top: 10px;" />
+                    <div class="modalButton">
+                        <button class="totalButton" onclick="modal_3_Submit()">SUBMIT</button>
+                        <button class="closeButton" onclick="closeModal3()">CLOSE</button>
+                    </div>
+                </div>
+            </section>
+            <section class="modal-btn4-container" hidden>
+                <span class="modalHeader">ENTER DETAILS SUBJECT 4</span>
+                <hr />
+                <div class="modalBody">
+                    <input class="modalInput" id="subject_4" type="text" placeholder="Enter Subject" />
+                    <input class="modalInput" id="1stGrade_4" type="text" placeholder="Enter 1st Grade" />
+                    <input class="modalInput" id="2ndGrade_4" type="text" placeholder="Enter 2nd Grade" />
+                    <input class="modalInput" id="3thGrade_4" type="text" placeholder="Enter 3rd Grade" />
+                    <input class="modalInput" id="4thGrade_4" type="text" placeholder="Enter 4th Grade" />
+                    <hr style="margin-top: 10px;" />
+                    <div class="modalButton">
+                        <button class="totalButton" onclick="modal_4_Submit()">SUBMIT</button>
+                        <button class="closeButton" onclick="closeModal4()">CLOSE</button>
+                    </div>
+                </div>
+            </section>
+            <section class="modal-btn5-container" hidden>
+                <span class="modalHeader">ENTER DETAILS SUBJECT 5</span>
+                <hr />
+                <div class="modalBody">
+                    <input class="modalInput" id="subject_5" type="text" placeholder="Enter Subject" />
+                    <input class="modalInput" id="1stGrade_5" type="text" placeholder="Enter 1st Grade" />
+                    <input class="modalInput" id="2ndGrade_5" type="text" placeholder="Enter 2nd Grade" />
+                    <input class="modalInput" id="3thGrade_5" type="text" placeholder="Enter 3rd Grade" />
+                    <input class="modalInput" id="4thGrade_5" type="text" placeholder="Enter 4th Grade" />
+                    <hr style="margin-top: 10px;" />
+                    <div class="modalButton">
+                        <button class="totalButton" onclick="modal_5_Submit()">SUBMIT</button>
+                        <button class="closeButton" onclick="closeModal5()">CLOSE</button>
+                    </div>
+                </div>
+            </section>
+            <section class="modal-btn6-container" hidden>
+                <span class="modalHeader">ENTER DETAILS SUBJECT 6</span>
+                <hr />
+                <div class="modalBody">
+                    <input class="modalInput" id="subject_6" type="text" placeholder="Enter Subject" />
+                    <input class="modalInput" id="1stGrade_6" type="text" placeholder="Enter 1st Grade" />
+                    <input class="modalInput" id="2ndGrade_6" type="text" placeholder="Enter 2nd Grade" />
+                    <input class="modalInput" id="3thGrade_6" type="text" placeholder="Enter 3rd Grade" />
+                    <input class="modalInput" id="4thGrade_6" type="text" placeholder="Enter 4th Grade" />
+                    <hr style="margin-top: 10px;" />
+                    <div class="modalButton">
+                        <button class="totalButton" onclick="modal_6_Submit()">SUBMIT</button>
+                        <button class="closeButton" onclick="closeModal6()">CLOSE</button>
+                    </div>
+                </div>
+            </section>
+            <section class="modal-btn7-container" hidden>
+                <span class="modalHeader">ENTER DETAILS SUBJECT 7</span>
+                <hr />
+                <div class="modalBody">
+                    <input class="modalInput" id="subject_7" type="text" placeholder="Enter Subject" />
+                    <input class="modalInput" id="1stGrade_7" type="text" placeholder="Enter 1st Grade" />
+                    <input class="modalInput" id="2ndGrade_7" type="text" placeholder="Enter 2nd Grade" />
+                    <input class="modalInput" id="3thGrade_7" type="text" placeholder="Enter 3rd Grade" />
+                    <input class="modalInput" id="4thGrade_7" type="text" placeholder="Enter 4th Grade" />
+                    <hr style="margin-top: 10px;" />
+                    <div class="modalButton">
+                        <button class="totalButton" onclick="modal_7_Submit()">SUBMIT</button>
+                        <button class="closeButton" onclick="closeModal7()">CLOSE</button>
+                    </div>
+                </div>
+            </section>
+            <section class="modal-btn8-container" hidden>
+                <span class="modalHeader">ENTER DETAILS SUBJECT 8</span>
+                <hr />
+                <div class="modalBody">
+                    <input class="modalInput" id="subject_8" type="text" placeholder="Enter Subject" />
+                    <input class="modalInput" id="1stGrade_8" type="text" placeholder="Enter 1st Grade" />
+                    <input class="modalInput" id="2ndGrade_8" type="text" placeholder="Enter 2nd Grade" />
+                    <input class="modalInput" id="3thGrade_8" type="text" placeholder="Enter 3rd Grade" />
+                    <input class="modalInput" id="4thGrade_8" type="text" placeholder="Enter 4th Grade" />
+                    <hr style="margin-top: 10px;" />
+                    <div class="modalButton">
+                        <button class="totalButton" onclick="modal_8_Submit()">SUBMIT</button>
+                        <button class="closeButton" onclick="closeModal8()">CLOSE</button>
+                    </div>
+                </div>
+            </section>
+            <section class="modal-btn9-container" hidden>
+                <span class="modalHeader">ENTER DETAILS SUBJECT 9</span>
+                <hr />
+                <div class="modalBody">
+                    <input class="modalInput" id="subject_9" type="text" placeholder="Enter Subject" />
+                    <input class="modalInput" id="1stGrade_9" type="text" placeholder="Enter 1st Grade" />
+                    <input class="modalInput" id="2ndGrade_9" type="text" placeholder="Enter 2nd Grade" />
+                    <input class="modalInput" id="3thGrade_9" type="text" placeholder="Enter 3rd Grade" />
+                    <input class="modalInput" id="4thGrade_9" type="text" placeholder="Enter 4th Grade" />
+                    <hr style="margin-top: 10px;" />
+                    <div class="modalButton">
+                        <button class="totalButton" onclick="modal_9_Submit()">SUBMIT</button>
+                        <button class="closeButton" onclick="closeModal9()">CLOSE</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
+<script src="./assets/index.js"></script>

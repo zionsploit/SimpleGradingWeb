@@ -1,0 +1,261 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    /** MAIN THEME **/
+    ---light           : #ffffff;
+    ---dark            : #0d0d0d;
+    /** LIGHT THEME **/
+    ---primary-light   : #a2d2ff;
+    ---secondary-light : #bde0fe;
+    ---tertiary-light  : #ffafcc;
+    ---quaternary-light: #ffc8dd;
+    ---quinary-light   : #cdb4db;
+    /** DARK THEME **/
+    ---primary-dark    : #369bff;
+    ---secondary-dark  : #4ca7fc;
+    ---tertiary-dark   : #f8458d;
+    ---quaternary-dark : #f9579a;
+    ---quinary-dark    : #9c6db9;
+
+}
+
+body {
+    background-color: var(---primary-light);
+}
+
+main {
+    height         : 100%;
+    width          : 100%;
+    display        : flex;
+    justify-content: center;
+    margin         : 50px 0 0 0;
+}
+
+.cardContainer {
+    background-color: var(---light);
+    width           : 35em;
+    height          : 25em;
+    border-radius   : 10px;
+    position        : relative;
+
+}
+
+.cardHeader {
+    padding      : 10px;
+    text-align   : center;
+    border-bottom: 0.1px solid var(---dark);
+}
+
+.cardContainer .cardHeader .cardHeaderText {
+    font-size     : 24px;
+    letter-spacing: 2px;
+    font-weight   : 600;
+}
+
+.cardBody {
+    padding              : 10px 20px;
+    display              : grid;
+    grid-template-columns: repeat(3, 100px);
+    column-gap           : 5em;
+    row-gap              : 10px;
+}
+
+.cardBody>button {
+    width         : 12em;
+    height        : 4em;
+    margin        : 15px 0 0 0;
+    font-weight   : 600;
+    letter-spacing: 1px;
+}
+
+.cardBody>.total {
+    width           : 26em;
+    height          : 3.3em;
+    background-color: var(---primary-light);
+    border          : 0;
+    border-radius   : 10px;
+    font-weight     : bold;
+    font-size: 20px;
+    letter-spacing  : .5px;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.total:hover {
+    background-color: var(---primary-dark);
+}
+
+.total>span {
+    font-size     : 20px;
+    font-weight   : 600;
+    letter-spacing: 2px;
+}
+
+.modal-btn1-container {
+    width           : 35em;
+    height          : auto;
+    padding         : 15px;
+    background-color: var(---light);
+    position        : absolute;
+    border-radius   : 10px;
+    top             : 15em;
+    box-shadow      : 0 0 50px var(---dark);
+}
+
+.modal-btn2-container {
+    width           : 35em;
+    height          : auto;
+    padding         : 15px;
+    background-color: var(---light);
+    position        : absolute;
+    border-radius   : 10px;
+    top             : 15em;
+    box-shadow      : 0 0 50px var(---dark);
+}
+
+.modal-btn3-container {
+    width           : 35em;
+    height          : auto;
+    padding         : 15px;
+    background-color: var(---light);
+    position        : absolute;
+    border-radius   : 10px;
+    top             : 15em;
+    box-shadow      : 0 0 50px var(---dark);
+}
+
+.modal-btn4-container {
+    width           : 35em;
+    height          : auto;
+    padding         : 15px;
+    background-color: var(---light);
+    position        : absolute;
+    border-radius   : 10px;
+    top             : 15em;
+    box-shadow      : 0 0 50px var(---dark);
+}
+
+.modal-btn5-container {
+    width           : 35em;
+    height          : auto;
+    padding         : 15px;
+    background-color: var(---light);
+    position        : absolute;
+    border-radius   : 10px;
+    top             : 15em;
+    box-shadow      : 0 0 50px var(---dark);
+}
+
+.modal-btn6-container {
+    width           : 35em;
+    height          : auto;
+    padding         : 15px;
+    background-color: var(---light);
+    position        : absolute;
+    border-radius   : 10px;
+    top             : 15em;
+    box-shadow      : 0 0 50px var(---dark);
+}
+
+.modal-btn7-container {
+    width           : 35em;
+    height          : auto;
+    padding         : 15px;
+    background-color: var(---light);
+    position        : absolute;
+    border-radius   : 10px;
+    top             : 15em;
+    box-shadow      : 0 0 50px var(---dark);
+}
+
+.modal-btn8-container {
+    width           : 35em;
+    height          : auto;
+    padding         : 15px;
+    background-color: var(---light);
+    position        : absolute;
+    border-radius   : 10px;
+    top             : 15em;
+    box-shadow      : 0 0 50px var(---dark);
+}
+
+.modal-btn9-container {
+    width           : 35em;
+    height          : auto;
+    padding         : 15px;
+    background-color: var(---light);
+    position        : absolute;
+    border-radius   : 10px;
+    top             : 15em;
+    box-shadow      : 0 0 50px var(---dark);
+}
+
+.modalHeader {
+    width         : 100%;
+    font-size     : 20px;
+    font-weight   : 600;
+    letter-spacing: 1.5px;
+}
+
+.modalBody {
+    padding: 5px;
+}
+
+.modalBody>.modalInput {
+    width         : 26em;
+    height        : 35px;
+    padding       : 0 10px;
+    font-size     : 20px;
+    font-weight   : 600;
+    color         : #242424;
+    letter-spacing: 1.6px;
+    margin-top    : 15px;
+}
+
+.modalButton {
+    width          : 100%;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.totalButton {
+    margin-top      : 10px;
+    width           : 10em;
+    height          : 3em;
+    background-color: var(---quaternary-dark);
+    color           : var(---light);
+    border          : 0;
+    font-weight     : 600;
+    letter-spacing  : .5px;
+    border-radius   : 5px;
+    transition      : .1s;
+    cursor          : pointer;
+}
+
+.totalButton:hover {
+    background-color: var(---quaternary-light);
+    color           : var(---dark);
+}
+
+.closeButton {
+    margin-top      : 10px;
+    width           : 10em;
+    height          : 3em;
+    background-color: var(---quinary-dark);
+    color           : var(---light);
+    border          : 0;
+    font-weight     : 600;
+    letter-spacing  : .5px;
+    border-radius   : 5px;
+    transition      : .1s;
+    cursor          : pointer;
+}
+
+.closeButton:hover {
+    background-color: var(---quinary-light);
+    color           : var(---dark);
+}
