@@ -1,3 +1,4 @@
+//Container for Every Subjects Total Grade
 let SubjectGrade1;
 let SubjectGrade2;
 let SubjectGrade3;
@@ -8,7 +9,7 @@ let SubjectGrade7;
 let SubjectGrade8;
 let SubjectGrade9;
 
-//BUTTON FUNCTIONS
+//Open Modal Functions 
 function btn1() {
     document.querySelector('.modal-btn1-container').hidden = false;
 }
@@ -44,7 +45,7 @@ function btn8() {
 function btn9() {
     document.querySelector('.modal-btn9-container').hidden = false;
 }
-//CLOSE BUTTON FUNCTIONS
+//CLOSE MODAL FUNCTIONS
 function closeModal1() {
     document.querySelector('.modal-btn1-container').hidden = true;
 }
@@ -80,7 +81,7 @@ function closeModal8() {
 function closeModal9() {
     document.querySelector('.modal-btn9-container').hidden = true;
 }
-//GRADE FUNCTIONS
+//GRADE FUNCTIONS "BASIC COMPUTATIONS OF GRADES"
 function modal_1_Submit() {
     const Subject = document.getElementById('subject_1').value
     const button1 = document.querySelector('#btn1')
@@ -198,6 +199,7 @@ function modal_9_Submit() {
     document.querySelector('.modal-btn9-container').hidden = true;
 }
 
+//TOTAL GRADES
 function btntotal() {
     const totalButton = document.querySelector('#total')
     const TotalGrade = parseFloat(SubjectGrade1) + parseFloat(SubjectGrade2) + parseFloat(SubjectGrade3) + parseFloat(SubjectGrade4) + parseFloat(SubjectGrade5) + parseFloat(SubjectGrade6) + parseFloat(SubjectGrade7) + parseFloat(SubjectGrade8) + parseFloat(SubjectGrade9)
